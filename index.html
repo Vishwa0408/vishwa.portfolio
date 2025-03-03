@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vishwa - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Hero Section -->
+    <header class="hero-section">
+        <h2>Hello, I'm</h2>
+        <h1>Vishwa</h1>
+        <p>Web developer</p>
+        <!-- Let's Talk Button -->
+<button class="btn btn-primary" onclick="showPopup()">Let's Talk</button><br>
+<a href="cv/cv1.pdf" download class="btn">Download CV</a>
+
+<!-- Pop-up Modal -->
+<div id="popup" class="popup">
+    <div class="popup-content">
+        <h3>Connect with Me</h3>
+        <a href="https://www.linkedin.com/in/Vishwa0408" target="_blank" class="btn btn-linkedin">LinkedIn</a>
+        <a href="https://github.com/vishwa0408" target="_blank" class="btn btn-github">GitHub</a>
+        <button onclick="closePopup()" class="btn-close">Close</button>
+	
+	
+    </div>
+</div>
+
+        <!-- Social Links -->
+    <div class="social-links">
+      <a href="https://www.linkedin.com/in/vishwa0408" target="_blank" class="btn linkedin-btn">
+        <i class="fab fa-linkedin"></i> LinkedIn
+      </a>
+      <a href="https://github.com/Vishwa0408" target="_blank" class="btn github-btn">
+        <i class="fab fa-github"></i> GitHub
+      </a>
+    </div>
+    </header>
+
+    <!-- About Section -->
+    <section class="about">
+        <h3>Get To Know</h3>
+        <h2>About Me</h2>
+	        <img src="images/3.jpg" alt="Profile Image" class="profile-img">
+        <p>Hi, I'm Vishwa, an enthusiastic MCA graduate (2024) with a passion for web development and software engineering. I love building interactive and user-friendly websites using HTML, CSS, JavaScript, and exploring new technologies.I am currently working on enhancing my skills in frontend and backend development, aiming to create innovative digital solutions. My portfolio showcases my projects, skills, and creativity.
+</p>
+     </section>
+<!-- Skills Section -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="scrolling-content">
+            <div class="skill-box">HTML</div>
+            <div class="skill-box">CSS</div>
+            <div class="skill-box">JavaScript</div>
+            <div class="skill-box">SQL</div>
+            <div class="skill-box">JAVA</div>
+		<div class="skill-box">BASIC NETWORKING</div>
+        </div>
+    </section>
+
+   <section id="education">
+        <h2>Educations</h2>
+
+        <div class="education-item">
+            <h3>MCA - Master of Computer Applications</h3>
+            <p>Madurai Sourashtra College Madurai</p>
+            
+            <!-- Button to toggle details -->
+            <button class="btn-toggle" onclick="toggleDetails('mca-details')">View Details</button>
+            
+            <!-- Details section (Hidden by default) -->
+            <div id="mca-details" class="education-details">
+                <p><strong>Year:</strong> 2022 - 2024</p>
+                <p><strong>CGPA:</strong> 7.2</p>
+		<p>
+		<a href="https://www.sourashtracollege.com" target="_blank">
+		Sourashtra College Madurai
+		</a>
+		</p>
+                
+            </div>
+        </div>
+	<div class="education-item">
+            <h3>BCA - Bachelor of Computer Applications</h3>
+            <p>Sri Ramakrishna Mission Vidyalaya College of Arts and Science</p>
+		
+            <!-- Button to toggle details -->
+            <button class="btn-toggle" onclick="toggleDetails('bca-details')">View Details</button>
+            
+            <!-- Details section (Hidden by default) -->
+            <div id="bca-details" class="education-details">
+                <p><strong>Year:</strong> 2019 - 2022</p>
+                <p><strong>CGPA:</strong> 6.7</p>
+			<p>
+		<a href="https://srkv.org" target="_blank">
+		SRKV
+		</a>
+		</p>
+               
+            </div>
+        </div>
+
+
+    </section>
+
+    <script src="script.js"></script>
+ <section id="projects">
+        <h2> Projects</h2>
+
+        <div class="project-item">
+            
+            <!-- Button to toggle project details -->
+            <button class="btn-toggle" onclick="toggleProject('project1-details')">View Details</button>
+
+            <!-- Project Description (Hidden by default) -->
+            <div id="project1-details" class="project-details">
+			<h1>CLOTHING STORE MANAGEMENT SYSTEM </h1>
+                <p>Technologies : PHP,MYSQL create a clothing store management system to manage inventory,sales,and customer data. Features include stock management,sales tracking,and customer profiles.Utilized PHP for fornt-end and SQL for database management,HTML/CSS for the front-end interface. improved inventory accuracy and streamlined sales processes.</p>
+            </div>
+        </div>
+ <div class="project-item">
+            
+            <!-- Button to toggle project details -->
+            <button class="btn-toggle" onclick="toggleProject('project2-details')">View Details</button>
+
+            <!-- Project Description (Hidden by default) -->
+            <div id="project2-details" class="project-details">
+			<h1>HOSTEL MANAGEMENT SYSTEM </h1>
+                <p>Developed a hostel management system to simplify room allocation,students records management,fee tracking,and maintenece request.implemented using PHP for fornt-end and Mysql for database management,and HTML/CSS for the user interface.Enhanced operational efficiency and streamlined hostel administration proccesses.</p>
+            </div>
+        </div>
+
+    </section>
+
+    <script src="script.js"></script>
+
+
+ <section id="certificates">
+        <h2> Certifications</h2>
+
+        <div class="certificate-item">
+            
+            
+            <!-- Button to toggle certificate image & details -->
+            <button class="btn-toggle" onclick="toggleCertificate('cert1-details')">View Certificates</button>
+            
+            <!-- Certificate Image & Details (Hidden by default) -->
+            <div id="cert1-details" class="certificate-details">
+                <img src="images/c1.jpeg" alt="Profile Image" class="profile-img">
+                <img src="images/c2.jpeg" alt="Profile Image" class="profile-img">
+			<img src="images/c3.jpeg" alt="Profile Image" class="profile-img">
+            </div>
+        </div>
+
+    </section>
+
+    <script src="script.js"></script>
+
+
+<!-- Contact Section -->
+<section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <p>Feel free to reach out for collaborations or just a chat!</p>
+    <form action="mailto:your-email@example.com" method="post" enctype="text/plain">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn btn-primary">Send Message</button>
+    </form>
+</section>
+</body>
+</html>

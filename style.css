@@ -1,0 +1,420 @@
+/* General Styling */
+body {
+    font-family: Arial,sans-serif;
+    background-color: #1e293b;
+    color: skyblue;
+    text-align: center;
+    margin: 0;
+}
+
+
+/* Hero Section */
+.hero-section {
+    padding: 50px 20px;
+}
+
+h1 {
+    font-size: 40px;
+    margin: 10px 0;
+}
+
+p {
+    font-size: 18px;
+}
+
+
+
+.btn {
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    color: skyblue;
+    font-weight: bold;
+    transition: 0.3s ease;
+    display: inline-block;
+    margin: 10px;
+}
+.btn{
+    background: #333;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+}
+.btn {
+  background-color: #0077b5;
+  color: white;
+}
+
+.btn:hover {
+  background-color: #005983;
+  transform: scale(1.05);
+}
+/* Pop-up Modal */
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #1e293b;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    text-align: center;
+    z-index: 1000;
+}
+
+.popup-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* LinkedIn & GitHub Buttons */
+.btn-linkedin {
+    background: #0077B5;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.btn-github {
+    background: #333;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.btn-close {
+    background: red;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+.btn-primary {
+    background: linear-gradient(45deg, #007BFF, #00D4FF);
+    border: none;
+    box-shadow: 0px 4px 10px rgba(0, 123, 255, 0.5);
+}
+
+
+/* Social Links Container */
+.social-links {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+/* Shared Button Styling */
+.social-links .btn {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1em;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* LinkedIn Button Styling */
+.linkedin-btn {
+  background-color: #0077b5;
+  color: white;
+}
+
+.linkedin-btn:hover {
+  background-color: #005983;
+  transform: scale(1.05);
+}
+
+/* GitHub Button Styling */
+.github-btn {
+  background-color: #0077b5;
+  color: white;
+}
+
+.github-btn:hover {
+  background-color: #005983;
+  transform: scale(1.05);
+}
+
+/* Icon Styling */
+.social-links i {
+  margin-right: 8px;
+}
+
+
+/* About Section */
+.about {
+    margin-top: 50px;
+}
+.profile-pic {
+    width:150px;
+    height:150px;
+    border-radius: 50%;
+	border-3px solid #fff;
+	box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+	transition: transform 0.5s ease-in-out;
+	
+}
+.profile-pic 
+.profile-img:hover {
+	transform: scale(1.1);
+}
+@keyframes pulse {
+	0% { transform: scale(1); }
+	50% { transform: scale(1.05); }
+	100% { transform: scale(1); }
+}
+.profile-img {
+	animation: pulse 2s infinite;
+}
+.skill-box {
+    background: #27374d;
+    padding: 10px 5px;
+    border-radius: 10px;
+    white-space: nowrap;
+	box-shadow: 0px 0px 10px rgba(0, 255, 255, 0.5);
+	
+}
+
+/* Education Section */
+.education {
+    padding: 50px 20px;
+    text-align: center;
+    background: #1e293b;
+    color: white;
+}
+
+/* Each Education Item */
+.education-item {
+    margin: 20px auto;
+    max-width: 500px;
+    background: #27374d;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 255, 255, 0.5);
+}
+
+/* Initially Hidden Details */
+.education-details {
+    display: none;
+    margin-top: 10px;
+    background: #334155;
+    padding: 10px;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Toggle Button */
+.btn-toggle {
+    background: linear-gradient(45deg, #007BFF, #00D4FF);
+    padding: 10px 20px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: transform 0.3s ease-in-out, background 0.3s;
+}
+
+.btn-toggle:hover {
+    transform: scale(1.1);
+    background: linear-gradient(45deg, #00D4FF, #007BFF);
+}
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background:  #1e293b;
+    color: skyblue;
+    text-align: center;
+    padding: 20px;
+}
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background: #1e293b;
+    color: skyblue;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Section Styling */
+#projects {
+    max-width: 600px;
+    margin: auto;
+    background: #27374d;;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+}
+
+/* Button Styling */
+.btn-toggle {
+    background: linear-gradient(45deg, #ff5722, #ff9800);
+    padding: 10px 20px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 10px;
+    transition: transform 0.3s, background 0.3s;
+}
+
+.btn-toggle:hover {
+    transform: scale(1.1);
+    background: linear-gradient(45deg, #ff9800, #ff5722);
+}
+
+/* Project Details - Hidden by Default */
+.project-details {
+    display: none;
+    background: #222;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    text-align: left;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* GitHub Repository Button */
+.btn-link {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 15px;
+    background: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.btn-link:hover {
+    background: #388E3C;
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Section Styling */
+#certificates {
+    max-width: 600px;
+    margin: auto;
+    background: #27374d;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+}
+
+/* Button Styling */
+.btn-toggle {
+    background: linear-gradient(45deg, #28a745, #00c853);
+    padding: 10px 20px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 10px;
+    transition: transform 0.3s, background 0.3s;
+}
+
+.btn-toggle:hover {
+    transform: scale(1.1);
+    background: linear-gradient(45deg, #00c853, #28a745);
+}
+
+/* Certificate Details - Hidden by Default */
+.certificate-details {
+    display: none;
+    background:#1e293b;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    text-align: left;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Certificate Image */
+.certificate-details img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Contact Section */
+.contact {
+    padding: 50px 20px;
+    text-align: center;
+    background: #27374d;;
+    color: skyblue;
+    margin-top: 50px;
+	box-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+}
+
+.contact h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.contact input, 
+.contact textarea {
+    width: 80%;
+    max-width: 400px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+.contact textarea {
+    height: 100px;
+    resize: none;
+}
+
+.contact button {
+    padding: 12px 25px;
+    background: linear-gradient(45deg, #007BFF, #00D4FF);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: transform 0.3s ease-in-out;
+}
+
+.contact button:hover {
+    transform: scale(1.1);
+}
